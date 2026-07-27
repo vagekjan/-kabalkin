@@ -234,6 +234,17 @@ p.body b,strong{color:var(--text);font-weight:600}
   section{padding:36px 0}
   .hero-in{padding:48px 40px}
 }
+
+@media print{
+  .scroll,.wb-btn,.wb-steps,.wb-corner{display:none!important}
+  .wb{grid-template-columns:1fr!important}
+  .wb-stage{padding:0!important}
+  .wb-book{transform:none!important;max-width:340px;margin:0 auto}
+  .wb-book .wb-pg{position:absolute!important;transform:none!important;opacity:0!important;box-shadow:none!important}
+  .wb-book .wb-pg.cover{position:relative!important;opacity:1!important}
+  .wb-book .wb-pg.cover .bk{display:none}
+  .wb-book::after{display:none}
+}
 </style>
 </head>
 <body>
